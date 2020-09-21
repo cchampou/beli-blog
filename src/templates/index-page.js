@@ -7,25 +7,31 @@ import Layout from '../components/Layout'
 export const IndexPageTemplate = ({
   author,
   quote,
-  intro,
-}) => (
-  <div>
-    <div>
-      <div>
-        <h1>Belinda</h1>
-        <h1>Sans Tabous</h1>
-        <img src={null} />
-        <p>{quote}<span>{author}</span></p>
-      </div>
-      <div>
-        <p>{intro}</p>
-      </div>
-    </div>
-    <div>
+  introduction,
+  image,
+}) => {
+  console.log(image)
 
+  return (
+    <div>
+      <div>
+        <div>
+          <h1>Belinda</h1>
+          <h1>Sans Tabous</h1>
+          <img src={image} />
+          {/*{!!image.childImageSharp ? image.childImageSharp.fluid.src : image}*/}
+          <p>{quote}<span>{author}</span></p>
+        </div>
+        <div>
+          <p>{introduction}</p>
+        </div>
+      </div>
+      <div>
+
+      </div>
     </div>
-  </div>
-)
+  )
+}
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -41,12 +47,9 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
+        introduction={frontmatter.introduction}
+        quote={frontmatter.quote}
+        author={frontmatter.author}
       />
     </Layout>
   )
