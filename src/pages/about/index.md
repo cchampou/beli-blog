@@ -1,6 +1,6 @@
 ---
 templateKey: about-page
 path: /about
-title: About our values
+title: Qui suis-je ? comme un livre ouvert...
 ---
 ### Work in progress...
