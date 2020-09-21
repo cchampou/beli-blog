@@ -9,13 +9,13 @@ mainpitch:
     shouldn't just taste good, it should do good too. We source all of our beans
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
-title: Great coffee with a conscience
 author: Alfred de Musset
 intro: Bienvenue sur Belinda Sans Tabous ! Je suis une Love Coach et conseillère
   sentimentale qui parle sans aucuns tabous de la vie amoureuse, du célibat, de
   l’estime de soi et de la sexualité. Vous désirez trouver l’amour, consolider
   votre couple ou améliorer votre vie sexuelle ? Laissez-vous guider pour
   changer de vie !
+title: Great coffee with a conscience
 main:
   heading: Great coffee with no compromises
   description: >
@@ -35,6 +35,11 @@ main:
 quote: La vie est un sommeil, l’amour en est le rêve, et vous aurez vécu si vous
   avez aimé
 image: /img/beli.jpg
+introduction: Bienvenue sur Belinda Sans Tabous ! Je suis une Love Coach et
+  conseillère sentimentale qui parle sans aucuns tabous de la vie amoureuse, du
+  célibat, de l’estime de soi et de la sexualité. Vous désirez trouver l’amour,
+  consolider votre couple ou améliorer votre vie sexuelle ? Laissez-vous guider
+  pour changer de vie !
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that
