@@ -7,6 +7,7 @@ import Layout from '../components/Layout'
 export const IndexPageTemplate = ({
   author,
   quote,
+  intro,
 }) => (
   <div>
     <div>
@@ -17,7 +18,7 @@ export const IndexPageTemplate = ({
         <p>{quote}<span>{author}</span></p>
       </div>
       <div>
-        <p>{quote}</p>
+        <p>{intro}</p>
       </div>
     </div>
     <div>
@@ -28,14 +29,9 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
+  author: PropTypes.string,
+  quote: PropTypes.string,
+  intro: PropTypes.string,
 }
 
 const IndexPage = ({ data }) => {
@@ -70,7 +66,6 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        title
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
@@ -78,27 +73,9 @@ export const pageQuery = graphql`
             }
           }
         }
-        heading
-        subheading
-        mainpitch {
-          title
-          description
-        }
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
-          description
-        }
+        quote
+        author
+        introduction
       }
     }
   }
