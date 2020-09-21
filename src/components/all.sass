@@ -1,4 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables"
+@import "~bulma"
 
 // Config vars
 $kaldi-red-invert: #fff
@@ -8,6 +9,10 @@ $light: #fafafa
 $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
+
+.container
+  width: 80%
+  margin: auto
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -117,7 +122,6 @@ $menu-label-color: $white-ter
   margin: 0 1.5em 0 0;
 
 // navbar
-
 .navbar-container
   display: flex
   justify-content: center
@@ -134,7 +138,6 @@ $menu-label-color: $white-ter
 
 
 // footer
-
 .footer
   background-color: $light
   color: $primary
@@ -142,7 +145,24 @@ $menu-label-color: $white-ter
   text-align: center
 
 
-@import "~bulma"
+// homepage
+.jumbotron
+  display: flex
+  align-items: center
+
+.jumbotron div
+  flex: 1
+
+.main-title
+  margin: 0 0
+  font-style: normal
+  font-size: 3rem
+
+.main-subtitle
+  color: lightgray;
+  font-size: 5rem;
+  margin: 0.5rem;
+  z-index: -1;
 
 
 // responsiveness

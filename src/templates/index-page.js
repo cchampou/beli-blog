@@ -13,13 +13,12 @@ export const IndexPageTemplate = ({
   console.log(image)
 
   return (
-    <div>
-      <div>
+    <div className="container">
+      <div className="jumbotron">
         <div>
-          <h1>Belinda</h1>
-          <h1>Sans Tabous</h1>
-          <img src={image} />
-          {/*{!!image.childImageSharp ? image.childImageSharp.fluid.src : image}*/}
+          <h1 className="main-title">Belinda</h1>
+          <h1 className="main-subtitle">Sans Tabous</h1>
+          <img src={!!image.childImageSharp ? image.childImageSharp.fluid.src : image} />
           <p>{quote}<span>{author}</span></p>
         </div>
         <div>
